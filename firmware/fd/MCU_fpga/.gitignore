@@ -1,0 +1,30 @@
+# Build output directories
+Debug/
+Release/
+build/
+
+# Object files and intermediate artifacts
+*.o
+*.obj
+*.d
+*.lst
+*.su
+
+# Linker and map files
+*.map
+*.lss
+
+# Executable and binary images
+*.elf
+*.bin
+*.hex
+*.s19
+
+# Debug symbols and memory dumps
+*.dump
+
+# Editor backup and temporary files
+*~
+*.bak
+*.swp
+*.log

@@ -1,0 +1,104 @@
+Reading D:/modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# do {C:\Users\29072\Desktop\ModelSim_RTL_Sim\Saved_Waves_20261101\fig7_awb_i2c_batch.do}
+# if {![file exists {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/work_fig7_awb_i2c}]} {vlib {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/work_fig7_awb_i2c}}
+# vmap savedwork {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/work_fig7_awb_i2c}
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet savedwork C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/work_fig7_awb_i2c 
+# Modifying modelsim.ini
+# vlog -work savedwork {C:/Users/29072/Desktop/ModelSim_RTL_Sim/src/awb_div20_core.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 16:46:59 on Nov 01,2026
+# vlog -work savedwork C:/Users/29072/Desktop/ModelSim_RTL_Sim/src/awb_div20_core.v 
+# -- Compiling module awb_div20_core
+# 
+# Top level modules:
+# 	awb_div20_core
+# End time: 16:46:59 on Nov 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work savedwork {C:/Users/29072/Desktop/ModelSim_RTL_Sim/src/gim_i2c_slave.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 16:46:59 on Nov 01,2026
+# vlog -work savedwork C:/Users/29072/Desktop/ModelSim_RTL_Sim/src/gim_i2c_slave.v 
+# -- Compiling module gim_i2c_slave
+# 
+# Top level modules:
+# 	gim_i2c_slave
+# End time: 16:46:59 on Nov 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work savedwork {C:/Users/29072/Desktop/ModelSim_RTL_Sim/tb/tb_fig7_awb_and_i2c.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 16:46:59 on Nov 01,2026
+# vlog -work savedwork C:/Users/29072/Desktop/ModelSim_RTL_Sim/tb/tb_fig7_awb_and_i2c.v 
+# -- Compiling module tb_fig7_awb_and_i2c
+# 
+# Top level modules:
+# 	tb_fig7_awb_and_i2c
+# End time: 16:46:59 on Nov 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=+acc -wlf {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/fig7_awb_i2c.wlf} savedwork.tb_fig7_awb_and_i2c
+# vsim -c -l C:\Users\29072\Desktop\ModelSim_RTL_Sim\Saved_Waves_20261101\fig7_awb_i2c_transcript.log -do "C:\Users\29072\Desktop\ModelSim_RTL_Sim\Saved_Waves_20261101\fig7_awb_i2c_batch.do" 
+# Start time: 16:46:59 on Nov 01,2026
+# Loading savedwork.tb_fig7_awb_and_i2c
+# Loading savedwork.awb_div20_core
+# Loading savedwork.gim_i2c_slave
+# log -r /*
+# vcd file {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/fig7_awb_i2c.vcd}
+# vcd add -r /*
+# run 38800 ns
+# set failed 0
+# 0
+# set actual [examine -radix unsigned /tb_fig7_awb_and_i2c/in_r_r1]
+# 85196
+# puts "CHECK in_r_r1: actual=$actual expected=85196"
+CHECK in_r_r1: actual=85196 expected=85196
+# if {$actual ne "85196"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig7_awb_and_i2c/in_b_r1]
+# 74711
+# puts "CHECK in_b_r1: actual=$actual expected=74711"
+CHECK in_b_r1: actual=74711 expected=74711
+# if {$actual ne "74711"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig7_awb_and_i2c/rd_cx_l]
+# 232
+# puts "CHECK rd_cx_l: actual=$actual expected=232"
+CHECK rd_cx_l: actual=232 expected=232
+# if {$actual ne "232"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig7_awb_and_i2c/rd_cx_h]
+# 1
+# puts "CHECK rd_cx_h: actual=$actual expected=1"
+CHECK rd_cx_h: actual=1 expected=1
+# if {$actual ne "1"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig7_awb_and_i2c/rd_cy_l]
+# 25
+# puts "CHECK rd_cy_l: actual=$actual expected=25"
+CHECK rd_cy_l: actual=25 expected=25
+# if {$actual ne "25"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig7_awb_and_i2c/rd_cy_h]
+# 1
+# puts "CHECK rd_cy_h: actual=$actual expected=1"
+CHECK rd_cy_h: actual=1 expected=1
+# if {$actual ne "1"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig7_awb_and_i2c/rd_valid_on]
+# 1
+# puts "CHECK rd_valid_on: actual=$actual expected=1"
+CHECK rd_valid_on: actual=1 expected=1
+# if {$actual ne "1"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig7_awb_and_i2c/rd_valid_off]
+# 0
+# puts "CHECK rd_valid_off: actual=$actual expected=0"
+CHECK rd_valid_off: actual=0 expected=0
+# if {$actual ne "0"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig7_awb_and_i2c/rd_ver]
+# 90
+# puts "CHECK rd_ver: actual=$actual expected=90"
+CHECK rd_ver: actual=90 expected=90
+# if {$actual ne "90"} {incr failed}
+# vcd flush
+# if {$failed > 0} {puts "VERIFIED_CHECKS_FAILED=$failed"; quit -code 3 -f}
+# puts "VERIFIED_ALL_CHECKS_PASS"
+VERIFIED_ALL_CHECKS_PASS
+# quit -code 0 -f
+# End time: 16:47:00 on Nov 01,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

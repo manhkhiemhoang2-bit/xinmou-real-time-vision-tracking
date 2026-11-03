@@ -1,0 +1,18 @@
+# Local IDE and synthesis caches
+.metadata/
+**/__pycache__/
+**/work/
+**/obj/
+**/build/
+**/*_Runs/
+**/*.o
+**/*.d
+**/*.tmp
+**/*.lock
+**/*.dmp
+**/*.bak*
+**/*_sim.log
+# These three simulation stimuli are restored by tools/prepare_workspace.py.
+hardware/td/ph1p35_isp/sim/stim_he_full.hex
+hardware/td/ph1p35_isp/sim/stim_rf_hd.hex
+hardware/td/ph1p35_isp/sim/stim_top_full.hex

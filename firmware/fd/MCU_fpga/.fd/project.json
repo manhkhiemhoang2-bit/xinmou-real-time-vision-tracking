@@ -1,0 +1,11 @@
+{
+    "arch": "rv32",
+    "chip": "ph1p35",
+    "hpfFile": "D:/Anlogic/FD_Release_2026.2/FDWork/MCU_fpga/camera_to_dsi_display.hpf",
+    "location": "D:/Anlogic/FD_Release_2026.2/FDWork/MCU_fpga",
+    "name": "MCU_fpga",
+    "os": "standalone",
+    "processor": "rpu",
+    "toolVersion": "862c784 (2026-09-02-16:28)",
+    "type": "platform"
+}

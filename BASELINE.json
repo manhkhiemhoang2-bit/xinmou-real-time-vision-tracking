@@ -1,0 +1,28 @@
+{
+  "name": "芯眸.多算法实时视觉跟踪系统",
+  "snapshotDate": "2026-11-03",
+  "td": {
+    "entry": "hardware/td/ph1p35_isp/prj/board/lab_ex3_osd/td_project/camera_to_dsi_display.al",
+    "version": "6.2.168116",
+    "device": "PH1P35MDG324",
+    "top": "design_top_wrapper"
+  },
+  "fd": {
+    "version": "FD Release 2026.2",
+    "application": "firmware/fd/yuntai_mcu",
+    "platform": "firmware/fd/MCU_fpga"
+  },
+  "finalFpgaBitstream": {
+    "path": "artifacts/fpga/phy_1/camera_to_dsi_display.bit",
+    "sha256": "e40cb4fca12de20595b46a0030986542a32b3f10d92fe5f6890e7b75da34855a"
+  },
+  "fdPlatformBitstream": {
+    "path": "firmware/fd/MCU_fpga/platform/camera_to_dsi_display.bit",
+    "sha256": "b2a01a58c654e7777319958beb1d9c6bb381a7f2fb01ba687cce873f6fbfd800"
+  },
+  "mechanical": {
+    "assemblies": 1,
+    "parts": 12,
+    "version": "V10_level_base_20261022"
+  }
+}

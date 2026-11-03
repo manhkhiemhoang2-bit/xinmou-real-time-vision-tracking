@@ -1,0 +1,14 @@
+{
+    "arch": "rv32",
+    "bspLocation": "D:/Anlogic/FD_Release_2026.2/FDWork/MCU_fpga",
+    "bspName": "MCU_fpga",
+    "chip": "ph1p35",
+    "languageType": "C",
+    "location": "D:/Anlogic/FD_Release_2026.2/FDWork/yuntai_mcu",
+    "name": "yuntai_mcu",
+    "os": "standalone",
+    "processor": "rpu",
+    "templateName": "EMPTY",
+    "toolVersion": "862c784 (2026-09-02-16:28)",
+    "type": "application"
+}

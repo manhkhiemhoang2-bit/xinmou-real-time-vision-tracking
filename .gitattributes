@@ -1,0 +1,13 @@
+# Keep source bytes unchanged so SHA-256 checks also pass after git clone.
+* -text
+*.sldprt binary
+*.SLDPRT binary
+*.sldasm binary
+*.SLDASM binary
+*.hpf binary
+*.bit binary
+*.bin binary
+*.elf binary
+*.gz binary
+*.wlf binary
+*.png binary

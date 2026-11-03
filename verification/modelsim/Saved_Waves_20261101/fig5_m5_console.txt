@@ -1,0 +1,89 @@
+Reading D:/modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# do {C:\Users\29072\Desktop\ModelSim_RTL_Sim\Saved_Waves_20261101\fig5_m5_batch.do}
+# if {![file exists {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/work_fig5_m5}]} {vlib {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/work_fig5_m5}}
+# vmap savedwork {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/work_fig5_m5}
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet savedwork C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/work_fig5_m5 
+# Modifying modelsim.ini
+# vlog -work savedwork {C:/Users/29072/Desktop/ModelSim_RTL_Sim/src/alg_color_gate.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 16:46:57 on Nov 01,2026
+# vlog -work savedwork C:/Users/29072/Desktop/ModelSim_RTL_Sim/src/alg_color_gate.v 
+# -- Compiling module alg_color_gate
+# 
+# Top level modules:
+# 	alg_color_gate
+# End time: 16:46:57 on Nov 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work savedwork {C:/Users/29072/Desktop/ModelSim_RTL_Sim/src/alg_runlen_bbox.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 16:46:57 on Nov 01,2026
+# vlog -work savedwork C:/Users/29072/Desktop/ModelSim_RTL_Sim/src/alg_runlen_bbox.v 
+# -- Compiling module alg_runlen_bbox
+# 
+# Top level modules:
+# 	alg_runlen_bbox
+# End time: 16:46:57 on Nov 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work savedwork {C:/Users/29072/Desktop/ModelSim_RTL_Sim/tb/tb_fig5_m5_color_bbox.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 16:46:57 on Nov 01,2026
+# vlog -work savedwork C:/Users/29072/Desktop/ModelSim_RTL_Sim/tb/tb_fig5_m5_color_bbox.v 
+# -- Compiling module tb_fig5_m5_color_bbox
+# 
+# Top level modules:
+# 	tb_fig5_m5_color_bbox
+# End time: 16:46:57 on Nov 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=+acc -wlf {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/fig5_m5.wlf} savedwork.tb_fig5_m5_color_bbox
+# vsim -c -l C:\Users\29072\Desktop\ModelSim_RTL_Sim\Saved_Waves_20261101\fig5_m5_transcript.log -do "C:\Users\29072\Desktop\ModelSim_RTL_Sim\Saved_Waves_20261101\fig5_m5_batch.do" 
+# Start time: 16:46:57 on Nov 01,2026
+# Loading savedwork.tb_fig5_m5_color_bbox
+# Loading savedwork.alg_color_gate
+# Loading savedwork.alg_runlen_bbox
+# log -r /*
+# vcd file {C:/Users/29072/Desktop/ModelSim_RTL_Sim/Saved_Waves_20261101/fig5_m5.vcd}
+# vcd add -r /*
+# run 2500 ns
+# set failed 0
+# 0
+# set actual [examine -radix unsigned /tb_fig5_m5_color_bbox/bbox_valid]
+# 1
+# puts "CHECK bbox_valid: actual=$actual expected=1"
+CHECK bbox_valid: actual=1 expected=1
+# if {$actual ne "1"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig5_m5_color_bbox/bbox_rows]
+# 6
+# puts "CHECK bbox_rows: actual=$actual expected=6"
+CHECK bbox_rows: actual=6 expected=6
+# if {$actual ne "6"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig5_m5_color_bbox/bbox_x0]
+# 460
+# puts "CHECK bbox_x0: actual=$actual expected=460"
+CHECK bbox_x0: actual=460 expected=460
+# if {$actual ne "460"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig5_m5_color_bbox/bbox_x1]
+# 503
+# puts "CHECK bbox_x1: actual=$actual expected=503"
+CHECK bbox_x1: actual=503 expected=503
+# if {$actual ne "503"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig5_m5_color_bbox/bbox_y0]
+# 10
+# puts "CHECK bbox_y0: actual=$actual expected=10"
+CHECK bbox_y0: actual=10 expected=10
+# if {$actual ne "10"} {incr failed}
+# set actual [examine -radix unsigned /tb_fig5_m5_color_bbox/bbox_y1]
+# 15
+# puts "CHECK bbox_y1: actual=$actual expected=15"
+CHECK bbox_y1: actual=15 expected=15
+# if {$actual ne "15"} {incr failed}
+# vcd flush
+# if {$failed > 0} {puts "VERIFIED_CHECKS_FAILED=$failed"; quit -code 3 -f}
+# puts "VERIFIED_ALL_CHECKS_PASS"
+VERIFIED_ALL_CHECKS_PASS
+# quit -code 0 -f
+# End time: 16:46:58 on Nov 01,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
